@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  scroll-behavior: smooth;
+}
+#home {
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+}
+#about {
+ background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+}
+#feedback {
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+}
+#footer {
+  margin-top: 0px;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+
+.logodiv {
+  margin: 10px 10px;
+  h1 {
+    font-size: 33px;
+    font-weight: 800;
+  }
+}
+.navele {
+  margin-left: 39px;
+}
+
+/* #Preparation {
+  overflow-y: hidden;
+  scrollbar-width: 12px;
+} */
+
+.buttonsele1 {
+  background: #ebebeb;
+  color: black;
+  border-radius: 12px;
+
+  padding: 9px 19px;
+}
+.buttonsele2 {
+  background: #b65f54;
+  color: white;
+  border-radius: 12px;
+
+  padding: 9px 19px;
+}
+.navmenu {
+  margin-right: 29vh;
+}
+.homediv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 39px;
+}
+.homeleft {
+  margin-top: 23px;
+  width: 50%;
+  animation: hello 2s;
+}
+.leftsidebutton {
+  text-decoration: none;
+  color: #b65f54;
+}
+.leftsidebutton1 {
+  background-color: #b65f54;
+  padding: 4px 30px;
+  border-radius: 12px;
+  color: white;
+  border: 1px none;
+}
+.home1 h1 {
+  font-size: px;
+  font-weight: 800;
+
+  margin-top: 34px;
+}
+
+.homeright {
+  width: 50%;
+  animation: hello 2s;
+}
+.homeright img {
+  margin-left: 12vh;
+}
+.navifudi {
+  animation: hello2 2s;
+}
+@keyframes hello {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes hello2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.aboutdiv1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.aboutleft {
+  margin-left: 24px;
+}
+.me-2 {
+  width: 80vh;
+}
+
+.popdiv {
+  background-color: palegoldenrod !important;
+  border-radius: 23px;
+  position: absolute;
+  left: 7vh;
+  top: 127px;
+  height: 90vh;
+  width: 176vh;
+  z-index: 3;
+  visibility: hidden;
+}
+.popdiv2 {
+  h1 {
+    font-weight: 800;
+  }
+}
+#overlay {
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  backdrop-filter: blur(6px);
+}
+.ingredientlist {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #4ebf0d !important;
+  overflow-y: auto;
+  max-height: 300px;
+  margin-top: 23px;
+}
+.preparationdiv {
+  font-size: 20px;
+  font-weight: 700;
+  overflow-y: auto;
+  max-height: 300px;
+  margin-top: 23px;
+  gap: 1;
+}
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+.feedback1 {
+  margin-left: 27px;
+  margin-top: 23px;
+  animation: hello 2s;
+}
+.feedback2 {
+  margin-left: 23px;
+  animation: hello2 2s;
+}
+.navibar {
+  position: fixed;
+}
+#footer {
+  margin-top: 23px;
+
+  background-color: #ebebeb;
+}
+
+.footerparenetdiv {
+  /* background-color: palegreen; */
+}
+.foot1 {
+  width: 25%;
+  h1 {
+    color: black;
+    margin-left: 18px;
+    font-weight: 700;
+  }
+  p {
+    margin-top: 23px;
+    margin-left: 18px;
+  }
+}
+.foot2 {
+  width: 25%;
+  h1 {
+    font-size: 21px;
+    margin-left: 26px;
+  }
+  ul {
+    list-style: none;
+    margin-left: 29px;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    color: black;
+    margin-top: 20px;
+  }
+}
+.foot3 {
+  width: 25%;
+  h1 {
+    font-size: 21px;
+    margin-left: 26px;
+  }
+  ul {
+    list-style: none;
+    margin-left: -8px;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    color: black;
+    margin-top: 20px;
+  }
+}
+.foot4 {
+  background-color: #4ebf0d;
+  width: 25%;
+}
+.tailleft {
+  h2 {
+    font-size: 17px;
+  }
+}
+.tailright i {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 4px -1px;
+  display: flex;
+  justify-content: space-between;
+  .bt1 {
+    padding: 12px 12px;
+    width: 50%;
+    height: 50%;
+  }
+  .bt1:hover,
+  .bt2:hover {
+    background-color: black;
+    color: white;
+    transition: 0.6s ease;
+  }
+  .bt2 {
+    padding: 12px 12px;
+    width: 50%;
+  }
+}
+.tabcontent {
+  display: none;
+}
+
+@media (max-width: 700px) {
+   .homeright .imgright{
+    display: none;
+   }
+   .homeleft .home1{
+    width: 83vw;
+    /* background-color: red; */
+   }
+}
