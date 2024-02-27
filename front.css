@@ -8,35 +8,12 @@
   font-style: italic;
   scroll-behavior: smooth;
 }
-#home {
-  background-image: linear-gradient(
-    to top,
-    #dad4ec 0%,
-    #dad4ec 1%,
-    #f3e7e9 100%
-  );
+[hidden] {
+  display: none;
 }
-#about {
- background-image: linear-gradient(
-    to top,
-    #dad4ec 0%,
-    #dad4ec 1%,
-    #f3e7e9 100%
-  );
+#home{
+  
 }
-#feedback {
-  background-image: linear-gradient(
-    to top,
-    #dad4ec 0%,
-    #dad4ec 1%,
-    #f3e7e9 100%
-  );
-}
-#footer {
-  margin-top: 0px;
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-}
-
 .logodiv {
   margin: 10px 10px;
   h1 {
@@ -183,9 +160,7 @@
   margin-top: 23px;
   gap: 1;
 }
-::-webkit-scrollbar {
-  width: 30px;
-}
+
 
 .feedback1 {
   margin-left: 27px;
@@ -293,13 +268,20 @@
 .tabcontent {
   display: none;
 }
+.recipebutton{
+  background-color: #4ebf0d;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 34px;
+    /* color: blue; */
+}
 
-@media (max-width: 700px) {
-   .homeright .imgright{
-    display: none;
-   }
-   .homeleft .home1{
-    width: 83vw;
-    /* background-color: red; */
-   }
+@media (max-width: 767px) {
+  .homeright {
+    width: 100%;
+  }
+  .homeleft {
+    width: 100%;
+  }
 }

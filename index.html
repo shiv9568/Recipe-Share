@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <section id="home" data-aos="zoom-in" data-aos-duartion="zoom-in">
+  <section id="home" data-aos="zoom-in" data-aos-duartion="zoom-in" class="bg-primary ">
 
     <nav class="navbar navifudi navbar-expand-lg">
       <div class="container-fluid">
@@ -88,7 +88,7 @@
           <div class="container-fluid">
             <form class="d-flex" onsubmit="searchRecipes(event)" role="search">
               <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                oninput="searchRecipes(event)" />
+                value="cake" type="text" oninput="searchRecipes(event)" />
             </form>
           </div>
         </nav>
@@ -278,6 +278,7 @@
     async function searchRecipes(event) {
       event.preventDefault();
       let searchInput = document.getElementById("searchInput").value;
+
       if (searchInput.trim().length === 0) {
         searchInput = "cake";
       }
@@ -303,7 +304,10 @@
               <h5 class="card-title text-center">${d.Title}</h5>
               <img src="${d.Image}" class="card-img-top rounded-5" alt="${d.Title}" />
               <div class="card-body d-flex justify-content-between">
-                <a href="#" class="btn btn-primary p-3" onClick="showPopDiv('${d.id}')" class=" text-center">Click to view</a>
+                <a href="#" class="btn btn-primary " onClick="showPopDiv('${d.id}')" class=" text-center">Click to view</a>
+                <i class="fa-solid fa-square-share-nodes" id="shareIcon"></i>
+
+                
                 
               </div>
               
@@ -344,7 +348,7 @@
           console.log("lamba haee ", recipe.Ingredients.length);
 
 
-         if (recipeData.d && Array.isArray(recipeData.d)) {
+          if (recipeData.d && Array.isArray(recipeData.d)) {
             const recipe = recipeData.d[0];
             if (
               recipe.Ingredients &&
@@ -401,6 +405,7 @@
       duration: 1000, // durations are in milliseconds
     });
   </script>
+
 
 </body>
 
