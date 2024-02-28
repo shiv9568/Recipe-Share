@@ -318,7 +318,7 @@
   }
   
 }
-@media (max-width:424px) {
+/* @media (max-width:424px) {
  .homeright .imgright{
     display: none;
 
@@ -361,5 +361,11 @@
       font-size: 20px;
       margin-top:11px;
     }
+  }
+} */
+
+@media (max-width:425px) {
+  .imgright{
+    background-color: palegreen;
   }
 }
