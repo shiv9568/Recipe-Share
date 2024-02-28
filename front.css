@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing:content-box;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: italic;
   scroll-behavior: smooth;
+  
 }
 [hidden] {
   display: none;
@@ -16,6 +17,7 @@
 }
 .logodiv {
   margin: 10px 10px;
+  
   h1 {
     font-size: 33px;
     font-weight: 800;
@@ -70,18 +72,21 @@
   border: 1px none;
 }
 .home1 h1 {
+  
   font-size: px;
   font-weight: 800;
-
+ 
   margin-top: 34px;
 }
 
 .homeright {
   width: 50%;
+ 
+  
   animation: hello 2s;
 }
 .homeright img {
-  margin-left: 12vh;
+  margin-left: 2vh;
 }
 .navifudi {
   animation: hello2 2s;
@@ -170,6 +175,8 @@
 .feedback2 {
   margin-left: 23px;
   animation: hello2 2s;
+  width: 180vh;
+  
 }
 .navibar {
   position: fixed;
@@ -178,6 +185,8 @@
   margin-top: 23px;
 
   background-color: #ebebeb;
+  margin-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .footerparenetdiv {
@@ -284,4 +293,47 @@
   .homeleft {
     width: 100%;
   }
+ 
+}
+@media (max-width:768px) {
+   .imgright{
+    
+    width: 95%;
+    height: 99%;
+    
+  }
+  .homeright{
+    margin-right: 110px;
+  }
+}
+@media (max-width:320px) {
+  .homeright .imgright{
+    opacity: 0;
+  }
+  .homediv{
+   
+    width: 99%;
+    height: 76vh;
+    margin-left: 2px 
+    
+  }
+  
+  .home1{
+   
+    width: 63vh;
+  }
+
+  .aboutdiv1{
+    
+    .aboutleft{
+      
+      margin-left: 0px;
+      width: 32vh;
+    }
+    h1{
+      font-size: 20px;
+      margin-top:11px;
+    }
+  }
+  
 }
