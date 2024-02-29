@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -26,93 +29,104 @@
 </style>
 <style>
   @media (max-width:426px) {
-        .imgright {
-            display: none;
-            ;
-        }
-
-        .homeleft {
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            /* background: black; */
-            padding: 0;
-            /* margin-left: 2rem */
-            ;
-        }
-
-        .homeright {
-            width: 0;
-            padding: 1rem;
-        }
-
+    .imgright {
+      display: none;
+      ;
     }
+
+    .aboutdiv1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10vh 3vh;
+      /* margin-bottom: 19px; */
+    }
+
+    .homeleft {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      /* background: black; */
+      padding: 0;
+      /* margin-left: 2rem */
+      ;
+    }
+
+    .homeright {
+      width: 0;
+      padding: 1rem;
+    }
+
+    #home {
+      background-color: #FFD43B;
+      height: 80vh;
+    }
+  }
 </style>
 
 <body>
-   <section id="home" data-aos="zoom-in" data-aos-duartion="zoom-in" class="">
+  <section id="home">
 
-        <nav class="navbar navifudi navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand logodiv" href="#">
-                    <h1>FOOD<span style="color: #b65f54;">ZEN</span></h1>
-                </a>
-                <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav navmenu ms-auto mb-4 mb-lg-0 gap-5  ">
-                        <li class="nav-item ">
-                            <a class="nav-link active fs-3 fw-bold" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-3 fw-bold" href="#about">Recipe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-3 fw-bold" href="#feedback">Feedback</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex gap-5" role="search">
-                        <button class="buttonsele1 shadow" type="submit">Login</button>
-                        <button class="buttonsele2 shadow" type="submit">Signup</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-        <div class="homediv ">
-            <div class="homeleft">
-                <div class="home1">
-                    <h1>
-                        Your Daily Dish
-
-                        A <span style="color: #b65f54">Food</span> Journey
-                    </h1>
-                    <p>
-                        Embark on a culinary adventure with 'Your Daily Dish,' where every
-                        bite tells a story. Indulge in a flavorful journey through diverse
-                        cuisines and tantalizing flavors. Satisfaction awaits at every
-                        meal.
-                    </p>
-                    <button class="leftsidebutton1 shadow mb-3">Sign up</button>
-                    <p>
-                        Do you have account?
-                        <a href="#" class="leftsidebutton">Log in </a>
-                    </p>
-                </div>
-            </div>
-            <div class="homeright ">
-                <img class="imgright" src="Pink White Simple Geometric Circle Profile Photo Instagram Post.png"
-                    alt="" />
-            </div>
+    <nav class="navbar navifudi navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand logodiv" href="#">
+          <h1>FOOD<span style="color: #b65f54;">ZEN</span></h1>
+        </a>
+        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navmenu ms-auto mb-4 mb-lg-0 gap-5  ">
+            <li class="nav-item ">
+              <a class="nav-link active fs-3 fw-bold" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 fw-bold" href="#about">Recipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 fw-bold" href="#feedback">Feedback</a>
+            </li>
+          </ul>
+          <form class="d-flex gap-5" role="search">
+            <button class="buttonsele1 shadow" type="submit">Login</button>
+            <button class="buttonsele2 shadow" type="submit">Signup</button>
+          </form>
         </div>
-    </section>
+      </div>
+    </nav>
+
+    <div class="homediv">
+      <div class="homeleft">
+        <div class="home1">
+          <h1>
+            Your Daily Dish
+
+            A <span style="color: #b65f54">Food</span> Journey
+          </h1>
+          <p>
+            Embark on a culinary adventure with 'Your Daily Dish,' where every
+            bite tells a story. Indulge in a flavorful journey through diverse
+            cuisines and tantalizing flavors. Satisfaction awaits at every
+            meal.
+          </p>
+          <button class="leftsidebutton1 shadow mb-3">Sign up</button>
+          <p>
+            Do you have account?
+            <a href="#" class="leftsidebutton">Log in </a>
+          </p>
+        </div>
+      </div>
+      <div class="homeright ">
+        <img class="imgright" src="Pink White Simple Geometric Circle Profile Photo Instagram Post.png" alt="" />
+      </div>
+    </div>
+  </section>
   <!-- ABOUT SECTION -->
 
-  <section id="about" data-aos="zoom-in" data-aos-duartion="zoom-in">
+  <section id="about">
     <div class="aboutdiv1">
       <div class="aboutleft">
         <h1>Trending Items</h1>
@@ -133,6 +147,8 @@
       <div id="recipeContainer" class="row gy-3"></div>
     </div>
     <div id="overlay" onclick="hidePopDiv()"></div>
+
+
     <div class="popdiv" id="popdiv" style="background-color: bisque;">
       <div class="tab">
         <button class="bt1 shadow" onclick="showtab(event, 'Ingredient')">Ingredient</button>
@@ -147,13 +163,15 @@
       <div class="share">
 
       </div>
-
     </div>
+
+
+
   </section>
 
   <!-- FEEDBACK PAGE -->
 
-  <section id="feedback" data-aos="zoom-in" data-aos-duartion="zoom-in">
+  <section id="feedback">
     <div class="feedback1">
       <h1 style=" margin-bottom: 32px;">Feedback</h1>
     </div>
@@ -239,56 +257,121 @@
     </div>
   </section>
 
-  <footer id="footer" data-aos="zoom-in" data-aos-duartion="zoom-in">
-    <div class="foothead">
-      <div class="footerparenetdiv d-flex  justify-content-around">
-        <div class="foot1">
-          <h1>FOODZEN</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias suscipit quos vero velit placeat
-            rem eos repellendus ex, quibusdam odio dolorum asperiores!</p>
-        </div>
-        <div class="foot2">
-          <h1>Quick link</h1>
-          <ul>
-            <a href="#home">
-              <li>Home</li>
-            </a>
-            <a href="#about">
-              <li>Recipe</li>
-            </a>
-            <a href="#feedback">
-              <li>feedback</li>
-            </a>
-
-          </ul>
-        </div>
-        <div class="foot3">
-          <h1>
-            legal
-          </h1>
-          <ul>
-            <li>Terms of Use</li>
-            <li>Privacy & Cookies</li>
-          </ul>
-        </div>
-
-
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
       </div>
-    </div>
-    <hr>
-    <div class="d-flex justify-content-between">
-      <div class="tailleft">
-        <h2>&copy 2023 RecipelLogo. All Right Reserved</h2>
-      </div>
-      <div class="tailright">
-        <i class="fa-brands fa-whatsapp " style="color: green; font-size: 30px;"></i>
-        <i class="fa-brands fa-x-twitter" style="font-size: 30px;"></i>
-        <i class="fa-brands fa-facebook" style="color: blue; font-size: 30px;"></i>
-        <i class="fa-brands fa-instagram" style="color: mediumorchid; font-size: 30px;"></i>
+      <!-- Left -->
 
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
-    </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Copyright -->
   </footer>
+  <!-- Footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -431,14 +514,7 @@
     }
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // durations are in milliseconds
-    });
-  </script>
+
   <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"></script> -->
 
 

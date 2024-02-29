@@ -2,19 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing:content-box;
-  font-family: "Playfair Display", serif;
+ font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: italic;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   scroll-behavior: smooth;
   
 }
 [hidden] {
   display: none;
 }
-#home{
-  
-}
+
 .logodiv {
   margin: 10px 10px;
   
@@ -52,11 +52,12 @@
 .homediv {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-left: 39px;
+  align-items: center;
+  /* margin-top: 50px; */
+  padding: 2rem;
 }
 .homeleft {
-  margin-top: 23px;
+  /* margin-top: 23px; */
   width: 50%;
   animation: hello 2s;
 }
@@ -91,7 +92,7 @@
 .navifudi {
   animation: hello2 2s;
 }
-@keyframes hello {
+/* @keyframes hello {
   0% {
     transform: translateX(-100%);
   }
@@ -106,12 +107,13 @@
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 .aboutdiv1 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 19px;
+  padding: 10vh 3vh;
+  /* margin-bottom: 19px; */
 }
 .aboutleft {
   margin-left: 24px;
@@ -124,10 +126,11 @@
   background-color: palegoldenrod !important;
   border-radius: 23px;
   position: absolute;
-  left: 7vh;
-  top: 127px;
-  height: 90vh;
-  width: 176vh;
+  /* left: 7vh; */
+  padding: 2rem;
+  top: 10vh;
+  height: fit-content;
+  width: 100%;
   z-index: 3;
   visibility: hidden;
 }
@@ -175,7 +178,7 @@
 .feedback2 {
   margin-left: 23px;
   animation: hello2 2s;
-  width: 180vh;
+  width: 100%;
   
 }
 .navibar {
@@ -183,8 +186,7 @@
 }
 #footer {
   margin-top: 23px;
-
-  background-color: #ebebeb;
+  background-color: #d42525;
   margin-bottom: 0;
   padding-bottom: 0px;
 }
@@ -194,6 +196,7 @@
 }
 .foot1 {
   width: 25%;
+  background-color: burlywood;
   h1 {
     color: black;
     margin-left: 18px;
@@ -255,7 +258,7 @@
 }
 
 .tab {
-  padding: 4px -1px;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   .bt1 {
