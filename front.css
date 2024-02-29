@@ -176,9 +176,11 @@
   animation: hello 2s;
 }
 .feedback2 {
-  margin-left: 23px;
-  animation: hello2 2s;
-  width: 100%;
+ margin-left: -1px;
+    animation: hello2 2s;
+    width: 100%;
+    
+    padding: 8px 71px;
   
 }
 .navibar {
