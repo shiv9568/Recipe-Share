@@ -161,6 +161,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   overflow-y: auto;
   max-height: 300px;
   margin-top: 23px;
+  l{
+    list-style: decimal;
+  }
 }
 .preparationdiv {
   font-size: 20px;
@@ -376,9 +379,3 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     }
   }
 } */
-
-@media (max-width:425px) {
-  .imgright{
-    background-color: palegreen;
-  }
-}
