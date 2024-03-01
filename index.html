@@ -59,19 +59,34 @@
     }
 
     #home {
-      background-color: #FFD43B;
+      background-color: #d3ab19;
       height: 80vh;
     }
+
+    #myVideo {
+      display: none;
+    }
+  }
+
+  #myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
   }
 </style>
 
 <body>
   <section id="home">
-
+    <video autoplay muted loop id="myVideo">
+      <source src="food.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
     <nav class="navbar navifudi navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand logodiv" href="#">
-          <h1>FOOD<span style="color: #b65f54;">ZEN</span></h1>
+          <h1 style="color: white;">FOOD<span style="color: #b65f54; font-weight: 800;">ZEN</span></h1>
         </a>
         <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -81,18 +96,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav navmenu ms-auto mb-4 mb-lg-0 gap-5  ">
             <li class="nav-item ">
-              <a class="nav-link active fs-3 fw-bold" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active fs-3 fw-bold" aria-current="page" href="#home" style="color: white;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-3 fw-bold" href="#about">Recipe</a>
+              <a class="nav-link fs-3 fw-bold" href="#about" style="color: white;">Recipe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-3 fw-bold" href="#feedback">Feedback</a>
+              <a class="nav-link fs-3 fw-bold" href="#feedback" style="color: white;">Feedback</a>
             </li>
           </ul>
           <form class="d-flex gap-5" role="search">
-            <button class="buttonsele1 shadow" type="submit">Login</button>
-            <button class="buttonsele2 shadow" type="submit">Signup</button>
+            <a href="#home"><button class="buttonsele1 shadow">Login</button></a>
+            <a href="#home"><button class="buttonsele2 shadow">Signup</button></a>
           </form>
         </div>
       </div>
@@ -101,19 +116,19 @@
     <div class="homediv">
       <div class="homeleft">
         <div class="home1">
-          <h1>
+          <h1 style="color: white;">
             Your Daily Dish
 
             A <span style="color: #b65f54">Food</span> Journey
           </h1>
-          <p>
+          <p style="color: white; font-size: 22px;">
             Embark on a culinary adventure with 'Your Daily Dish,' where every
             bite tells a story. Indulge in a flavorful journey through diverse
             cuisines and tantalizing flavors. Satisfaction awaits at every
             meal.
           </p>
           <button class="leftsidebutton1 shadow mb-3">Sign up</button>
-          <p>
+          <p style="color: white;">
             Do you have account?
             <a href="#" class="leftsidebutton">Log in </a>
           </p>
@@ -178,7 +193,7 @@
 
     <div class="feedback2">
 
-      <div class="row">
+      <div class="row feedbackdata">
         <div class="col-12 col-sm-6 col-md-4">
           <div class="card">
             <img src="https://20fix.com/xfood/img/butternut-squash-apple-soup-365210.jpg" class="card-img-top"
@@ -190,10 +205,10 @@
               </p>
               <div class="d-flex justify-content-between">
                 <div>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: #ffd43b"></i>
-                  <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: #ffd43b"></i>
-                  <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 21px;"></i>
                 </div>
                 <div>
                   <img src="user1.png" height="53px" style="margin-right: 34px" class="rounded" />
@@ -212,10 +227,10 @@
               </p>
               <div class="d-flex justify-content-between">
                 <div>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 21px;"></i>
                 </div>
                 <div>
                   <img src="user1.png" height="53px" style="margin-right: 34px" />
@@ -235,10 +250,10 @@
               </p>
               <div class="d-flex justify-content-between">
                 <div>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 21px;"></i>
+                  <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 21px;"></i>
                 </div>
                 <div>
                   <img src="user1.png" height="53px" style="margin-right: 34px" />

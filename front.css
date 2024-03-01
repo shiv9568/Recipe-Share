@@ -27,6 +27,7 @@
   margin-left: 39px;
 }
 
+
 /* #Preparation {
   overflow-y: hidden;
   scrollbar-width: 12px;
@@ -168,6 +169,11 @@
   margin-top: 23px;
   gap: 1;
 }
+.fa-solid{
+    font-weight: 900;
+    font-size: 28px;
+    
+}
 
 
 .feedback1 {
@@ -183,6 +189,7 @@
     padding: 8px 71px;
   
 }
+
 .navibar {
   position: fixed;
 }
