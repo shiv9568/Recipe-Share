@@ -36,12 +36,15 @@ async function searchRecipes(event) {
         data.d.forEach((d) => {
             recipeCards += `
           <div class="col-md-4 rounded">
-            <div class="card">
+            <div class="card cardstyle">
               <h5 class="card-title text-center">${d.Title}</h5>
-              <img src="${d.Image}" class="card-img-top rounded-5" alt="${d.Title}" />
-              <div class="card-body d-flex justify-content-between">
-                <a href="#" class="btn btn-primary " onClick="showPopDiv('${d.id}')" class=" text-center">Click to view</a>
-                  <button id="shareButton" onClick='hello()'>Share Link</button>
+              <img src="${d.Image}" class="card-img-top rounded-5 cardimage" alt="${d.Title}" />
+              <div class="card-body d-flex justify-content-between" >
+                <a href="#" class="button-78 fudi" onClick="showPopDiv('${d.id}')" >Click to view
+                </a>
+
+                
+                  <button class="button-78" onClick='hello()'>Share Link</button>
 
                 
                 
@@ -76,19 +79,19 @@ async function searchRecipes(event) {
 // });
 async function hello() {
     if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: 'Share Link',
-                        url: window.location.href
-                    });
-                    console.log('Link shared successfully!');
-                } catch (error) {
-                    console.error('Error sharing link:', error);
-                }
-            } else {
-                // Fallback if Web Share API is not supported
-                alert('Web Share API is not supported on this browser. You can manually share the link.');
-            }
+        try {
+            await navigator.share({
+                title: 'Share Link',
+                url: window.location.href
+            });
+            console.log('Link shared successfully!');
+        } catch (error) {
+            console.error('Error sharing link:', error);
+        }
+    } else {
+        // Fallback if Web Share API is not supported
+        alert('Web Share API is not supported on this browser. You can manually share the link.');
+    }
 }
 async function showPopDiv(recipeId) {
     document.getElementById("popdiv").style.visibility = "visible";
