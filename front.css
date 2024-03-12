@@ -23,6 +23,11 @@
     background-color: brown;
   }
 }
+
+#about{
+  /* background-color: #541a0f; */
+  margin-top: 2px;
+}
 #shareButton{
  background-color: #6d5f13;
     padding: 9px 6px;

@@ -6,18 +6,14 @@ function hidePopDiv() {
 
 function handleInput(event) {
     let searchInput = event.target.value;
-    if (searchInput.trim().length === 0) {
-        searchInput = "cake";
-    }
     searchRecipes(searchInput);
 }
 async function searchRecipes(event) {
     event.preventDefault();
     let searchInput = document.getElementById("searchInput").value;
+    console.log(searchInput);
 
-    if (searchInput.trim().length === 0) {
-        searchInput = "cake";
-    }
+
 
     const url = `https://food-recipes-with-images.p.rapidapi.com/?q=${searchInput}&limit=9`;
     const options = {
@@ -30,8 +26,10 @@ async function searchRecipes(event) {
     try {
         const response = await fetch(url, options);
         const data = await response.json();
+        console.log(data);
 
         let recipeCards = "";
+
 
         data.d.forEach((d) => {
             recipeCards += `
@@ -59,24 +57,7 @@ async function searchRecipes(event) {
         console.error(error);
     }
 }
-// document.querySelectorAll('.shareButton').forEach(shareButton => {
-//     shareButton.addEventListener('click', async () => {
-//         if (navigator.share) {
-//             try {
-//                 await navigator.share({
-//                     title: 'Share Link',
-//                     url: window.location.href
-//                 });
-//                 console.log('Link shared successfully!');
-//             } catch (error) {
-//                 console.error('Error sharing link:', error);
-//             }
-//         } else {
-//             // Fallback if Web Share API is not supported
-//             alert('Web Share API is not supported on this browser. You can manually share the link.');
-//         }
-//     });
-// });
+
 async function hello() {
     if (navigator.share) {
         try {
